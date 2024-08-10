@@ -1,0 +1,3 @@
+/Users/carlosaldaco/Desktop/usingGit/usingVim/build/CMakeFiles/run.dir
+/Users/carlosaldaco/Desktop/usingGit/usingVim/build/CMakeFiles/edit_cache.dir
+/Users/carlosaldaco/Desktop/usingGit/usingVim/build/CMakeFiles/rebuild_cache.dir
