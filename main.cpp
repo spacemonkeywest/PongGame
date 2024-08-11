@@ -5,11 +5,13 @@ int main() {
 	sf::RenderWindow window(sf::VideoMode(800, 800), "New Window");
 
 	sf::RectangleShape rectangle;
-	rectangle.setSize(sf::Vector2f(100, 50));
+	rectangle.setSize(sf::Vector2f(5, 80));
 	rectangle.setFillColor(sf::Color::White);
 	rectangle.setOutlineColor(sf::Color::White);
 	rectangle.setOutlineThickness(5);
-	rectangle.setPosition(10, 20);
+	rectangle.setPosition(50, 360);
+
+	float moveSpeed = 0.05f;
 
 	while (window.isOpen()) {
 		sf::Event event;
@@ -18,6 +20,15 @@ int main() {
 				window.close();
 			}
 		}
+
+		if (sf::Keyboard::isKeyPressed(sf::Keyboard::W)) {
+			rectangle.move(0, -moveSpeed);
+		}
+
+		if (sf::Keyboard::isKeyPressed(sf::Keyboard::S)) {
+			rectangle.move(0, moveSpeed);
+		}
+
 		window.clear();
 		window.draw(rectangle);
 		window.display();
