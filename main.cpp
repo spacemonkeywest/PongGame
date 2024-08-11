@@ -21,12 +21,15 @@ int main() {
 			}
 		}
 
-		if (sf::Keyboard::isKeyPressed(sf::Keyboard::W)) {
-			rectangle.move(0, -moveSpeed);
-		}
+		if (event.type == sf::Event::KeyPressed) {
+			if (event.key.code == sf::Keyboard::W) {
+				rectangle.move(0, -moveSpeed);
+			}
 
-		if (sf::Keyboard::isKeyPressed(sf::Keyboard::S)) {
-			rectangle.move(0, moveSpeed);
+			if (event.key.code == sf::Keyboard::S) {
+				rectangle.move(0, moveSpeed);
+			}
+
 		}
 
 		window.clear();
