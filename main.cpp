@@ -19,8 +19,6 @@ int main() {
 			}
 		}
 		window.clear();
-		std::cout << "Rectangle position: " << rectangle.getPosition().x 		i<< ", " << rectangle.getPosition().y << std::endl;
-
 		window.draw(rectangle);
 		window.display();
 	}

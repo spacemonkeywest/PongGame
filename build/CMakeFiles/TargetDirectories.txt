@@ -1,3 +1,3 @@
-/Users/carlosaldaco/Desktop/usingGit/usingVIM/build/CMakeFiles/run.dir
-/Users/carlosaldaco/Desktop/usingGit/usingVIM/build/CMakeFiles/edit_cache.dir
-/Users/carlosaldaco/Desktop/usingGit/usingVIM/build/CMakeFiles/rebuild_cache.dir
+/Users/carlosaldaco/Desktop/games/GameOne/build/CMakeFiles/run.dir
+/Users/carlosaldaco/Desktop/games/GameOne/build/CMakeFiles/edit_cache.dir
+/Users/carlosaldaco/Desktop/games/GameOne/build/CMakeFiles/rebuild_cache.dir

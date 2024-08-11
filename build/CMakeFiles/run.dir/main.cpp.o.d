@@ -1,5 +1,5 @@
 CMakeFiles/run.dir/main.cpp.o: \
-  /Users/carlosaldaco/Desktop/usingGit/usingVim/main.cpp \
+  /Users/carlosaldaco/Desktop/games/GameOne/main.cpp \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include/c++/v1/iostream \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include/c++/v1/__assert \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk/usr/include/c++/v1/__config \
