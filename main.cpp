@@ -4,12 +4,17 @@
 int main() {
 	sf::RenderWindow window(sf::VideoMode(800, 800), "New Window");
 
-	sf::RectangleShape rectangle;
-	rectangle.setSize(sf::Vector2f(5, 80));
-	rectangle.setFillColor(sf::Color::White);
-	rectangle.setOutlineColor(sf::Color::White);
-	rectangle.setOutlineThickness(5);
-	rectangle.setPosition(50, 360);
+	sf::RectangleShape rectangle1;
+	rectangle1.setSize(sf::Vector2f(20, 150));
+	rectangle1.setFillColor(sf::Color::White);
+	rectangle1.setOutlineColor(sf::Color::White);
+	rectangle1.setPosition(50, 360);
+
+	sf::RectangleShape rectangle2;
+	rectangle2.setSize(sf::Vector2f(20, 150));
+	rectangle2.setFillColor(sf::Color::White);
+	rectangle2.setOutlineColor(sf::Color::White);
+	rectangle2.setPosition(730, 360);
 
 	float moveSpeed = 0.05f;
 
@@ -21,19 +26,35 @@ int main() {
 			}
 		}
 
-		if (event.type == sf::Event::KeyPressed) {
-			if (event.key.code == sf::Keyboard::W) {
-				rectangle.move(0, -moveSpeed);
-			}
+		if (sf::Keyboard::isKeyPressed(sf::Keyboard::W))  {
+			float newY = rectangle1.getPosition().y;
+			if (newY >= 0)
+				rectangle1.move(0, -moveSpeed);
+		} 
 
-			if (event.key.code == sf::Keyboard::S) {
-				rectangle.move(0, moveSpeed);
-			}
-
+		if (sf::Keyboard::isKeyPressed(sf::Keyboard::S)) {
+			float newY = rectangle1.getPosition().y;
+			if (newY < 650)
+				rectangle1.move(0, moveSpeed);
 		}
 
+		if (sf::Keyboard::isKeyPressed(sf::Keyboard::Up)) {
+			float newY = rectangle2.getPosition().y;
+			if (newY >= 0)
+				rectangle2.move(0, -moveSpeed);
+		}
+
+		if (sf::Keyboard::isKeyPressed(sf::Keyboard::Down)) {
+			float newY = rectangle2.getPosition().y;
+			if (newY < 650)
+				rectangle2.move(0, moveSpeed);			
+		}
+
+
+
 		window.clear();
-		window.draw(rectangle);
+		window.draw(rectangle1);
+		window.draw(rectangle2);
 		window.display();
 	}
 	return EXIT_SUCCESS;
